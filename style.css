@@ -1,0 +1,95 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #222;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background-color: #eeeeee;
+    border: solid #333;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    padding: 30px;
+
+    background-color: #aaa;
+    border: solid #333;
+}
+
+.calcDisplay {
+    flex: 25;
+    margin-bottom: 30px;
+    border: solid #333;
+
+    background-color: #eee;
+}
+
+.calcBody {
+    flex: 75;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnsTop {
+    flex: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.btnsTop button {
+    height: 100%;
+    width: 100%;
+}
+
+.btnClear {
+    background-color: #faa;
+}
+
+.btnClear:hover {
+    background-color: #e99;
+}
+
+.btnDelete {
+    background-color: #aaf;
+}
+
+.btnDelete:hover {
+    background-color: #99e;
+}
+
+.btnsBottom {
+    flex: 80;
+    display: flex;
+    gap: 15px;
+}
+
+.btnsNums {
+    flex: 65;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btnsOperators {
+    flex: 20;
+    display: grid;
+    gap: 15px;
+}
