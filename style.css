@@ -32,10 +32,31 @@ button:hover {
 
 .calcDisplay {
     flex: 25;
+    flex-direction: column;
     margin-bottom: 30px;
     border: solid #333;
 
     background-color: #eee;
+}
+
+.display {
+    flex: 1;
+    height: 50%;
+}
+
+.display span {
+    font-size: 30px;
+}
+
+.displaySolution {
+    height: 50%;
+    flex: 1;
+}
+
+.displaySolution span{
+    float: right;
+    font-size: 50px;
+    font-weight: 800;
 }
 
 .calcBody {
