@@ -35,6 +35,7 @@ button:hover {
     flex-direction: column;
     margin-bottom: 30px;
     border: solid #333;
+    box-sizing:border-box;
 
     background-color: #eee;
 }
@@ -42,6 +43,7 @@ button:hover {
 .display {
     flex: 1;
     height: 50%;
+    box-sizing:border-box;
 }
 
 .display span {
@@ -51,6 +53,7 @@ button:hover {
 .displaySolution {
     height: 50%;
     flex: 1;
+    box-sizing:border-box;
 }
 
 .displaySolution span{

@@ -43,25 +43,30 @@ for (let c = 0; c < calcBtnList.length; c++) {
     })
 }
 
+const btnClear = document.getElementById('btnClear');
+btnClear.addEventListener('click', () => {
+    displayValue = '';
+
+    display.innerHTML = displayValue;
+})
+
+const btnDelete = document.getElementById('btnDelete');
+btnDelete.addEventListener('click', () => {
+    displayValue = displayValue.slice(0, -1);
+    display.innerHTML = displayValue;
+})
+
 const btnEquals = document.getElementById('btnEquals');
 btnEquals.addEventListener('click', () => {
     const operateValue = displayValue.split(" ")
-    console.log(operateValue);
-    console.log(operateValue.length)
-
-
-
 
     solution = operate(Number(operateValue[0]), operateValue[1], Number(operateValue[2]));
 
     if (operateValue.length > 3) {
-        for (let i = 3; i <= operateValue.length; i += 2) {
+        for (let i = 3; i < operateValue.length; i += 2) {
             solution = operate(solution, operateValue[i], Number(operateValue[i+1]));
         }
     }
 
-
-
-    
     displaySolution.innerHTML = solution;
 })
